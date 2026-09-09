@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharadwaja & Lalitha | Wedding Countdown</title>
+<style>
+:root{--maroon:#6f2f22;--gold:#b88a35;--cream:#fff8e8;--green:#52673d}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;font-family:Georgia,"Times New Roman",serif;color:#4a3026;background:radial-gradient(circle at 15% 10%,rgba(220,173,108,.18),transparent 24%),radial-gradient(circle at 85% 85%,rgba(130,72,48,.12),transparent 28%),linear-gradient(135deg,#fff9ea,#f7e4c6)}
+.card{width:min(680px,100%);text-align:center;padding:42px 24px 34px;border:2px solid rgba(184,138,53,.65);border-radius:28px;background:rgba(255,250,239,.94);box-shadow:0 18px 50px rgba(74,48,38,.16);position:relative;overflow:hidden}
+.ganesha{font-size:44px;color:var(--gold)}.blessing{color:var(--green);font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:8px 0 22px}.names{font-size:clamp(38px,9vw,66px);line-height:1.05;color:var(--maroon);font-style:italic;margin:0}.and{color:var(--gold);font-size:24px;margin:7px;font-style:italic}.subtitle{margin:22px 0 6px;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#6d5647}.date{font-size:clamp(26px,6vw,42px);color:var(--maroon);font-weight:bold;margin:6px 0 28px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:auto;max-width:570px}.unit{border:1px solid rgba(184,138,53,.55);background:linear-gradient(180deg,#fffdf5,#f8e8cf);border-radius:15px;padding:16px 7px 12px}.number{font-size:clamp(28px,7vw,48px);line-height:1;color:var(--maroon);font-weight:bold}.label{margin-top:8px;color:#80694f;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.message{font-size:20px;font-style:italic;color:var(--green);margin:22px 0 6px}.footer{margin-top:22px;font-size:13px;letter-spacing:1px;color:#856d5d}
+@media(max-width:420px){body{padding:12px}.card{padding:36px 14px 30px}.countdown{gap:7px}.unit{padding:13px 4px 10px}.label{font-size:9px;letter-spacing:.8px}}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="ganesha">ॐ</div>
+<div class="blessing">With Divine Blessings</div>
+<h1 class="names">Bharadwaja</h1><div class="and">&amp;</div><h1 class="names">Lalitha</h1>
+<div class="subtitle">Counting down to our wedding</div>
+<div class="date">21 November 2026</div>
+<section class="countdown">
+<div class="unit"><div class="number" id="days">--</div><div class="label">Days</div></div>
+<div class="unit"><div class="number" id="hours">--</div><div class="label">Hours</div></div>
+<div class="unit"><div class="number" id="minutes">--</div><div class="label">Minutes</div></div>
+<div class="unit"><div class="number" id="seconds">--</div><div class="label">Seconds</div></div>
+</section>
+<div class="message" id="message">The celebration is getting closer! ♥</div>
+<div class="footer">Save the date • 21.11.2026</div>
+</main>
+<script>
+const weddingDate=new Date("2026-11-21T00:00:00+05:30");
+function updateCountdown(){let diff=weddingDate-new Date();if(diff<=0){["days","hours","minutes","seconds"].forEach(id=>document.getElementById(id).textContent="0");document.getElementById("message").textContent="Today is the day! 💍";return}
+const d=Math.floor(diff/86400000);diff%=86400000;const h=Math.floor(diff/3600000);diff%=3600000;const m=Math.floor(diff/60000);const s=Math.floor(diff%60000/1000);
+document.getElementById("days").textContent=d;document.getElementById("hours").textContent=String(h).padStart(2,"0");document.getElementById("minutes").textContent=String(m).padStart(2,"0");document.getElementById("seconds").textContent=String(s).padStart(2,"0")}
+updateCountdown();setInterval(updateCountdown,1000);
+</script>
+</body></html>
