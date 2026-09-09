@@ -1,109 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#651f1b">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gundepudi Bharadvaja & Kannekanti Lalitha | Wedding Countdown</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif:wght@400;600;700&display=swap');
-:root{--maroon:#651f1b;--wine:#8b3427;--gold:#b88732;--deepgold:#8c5b19;--cream:#fff8e9;--turmeric:#e6bd58;--leaf:#42613c}
-*{box-sizing:border-box}html{min-height:100%}
-body{margin:0;min-height:100vh;font-family:"Noto Serif",Georgia,serif;color:#4b2c22;background:
-radial-gradient(circle at 50% 10%,rgba(255,255,255,.95),rgba(255,247,226,.82) 38%,rgba(240,212,158,.92)),
-linear-gradient(135deg,#f9e8bf,#fff8e8);overflow-x:hidden}
-.page{width:min(720px,100%);min-height:100vh;margin:auto;position:relative;padding:0 20px 34px;background:rgba(255,251,239,.68);border-left:1px solid rgba(184,135,50,.35);border-right:1px solid rgba(184,135,50,.35);overflow:hidden}
-.page:before{content:"";position:absolute;inset:12px;border:2px solid var(--gold);pointer-events:none}
-.page:after{content:"❖  ❁  ❖  ❁  ❖  ❁  ❖";position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:var(--gold);letter-spacing:10px;white-space:nowrap;font-size:18px}
-.top{padding-top:20px;position:relative;z-index:1}
-.toran{height:94px;position:relative;border-top:8px solid var(--gold);margin:0 -20px 8px;display:flex;justify-content:center;gap:17px;padding-top:7px;background:linear-gradient(180deg,rgba(101,31,27,.07),transparent)}
-.toran span{position:relative;width:28px;height:78px;display:block}
-.toran span:before{content:"";position:absolute;top:0;left:13px;width:2px;height:100%;background:linear-gradient(#8c5b19,#d8a84d)}
-.toran span:after{content:"";position:absolute;top:13px;left:4px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffd96e 0 18%,#e89b2d 19% 62%,#b95724 63%);box-shadow:0 29px 0 #d4762d,0 48px 0 #f0a83d}
-.ganesha-wrap{display:flex;justify-content:center;margin-top:-2px}
-.ganesha{width:124px;height:124px;filter:drop-shadow(0 5px 5px rgba(80,42,15,.18))}
-.invocation{text-align:center;color:var(--deepgold);font-size:14px;letter-spacing:3px;font-weight:700;margin:0 0 7px}
-.divine{text-align:center;color:var(--leaf);font-size:12px;letter-spacing:2.4px;text-transform:uppercase;margin:0 0 28px}
-.names{text-align:center;position:relative;z-index:1}
-.surname{display:block;font-size:16px;letter-spacing:3px;text-transform:uppercase;color:#7b5a37;margin-bottom:0}
-.first{display:block;font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:clamp(58px,12vw,91px);line-height:.84;color:var(--maroon);font-weight:400}
-.and{font-family:"Cormorant Garamond",serif;font-size:28px;font-style:italic;color:var(--gold);margin:10px 0}
-.rule{width:min(390px,78%);height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:25px auto 19px}
-.count-title{text-align:center;color:var(--leaf);letter-spacing:3px;font-size:13px;text-transform:uppercase;margin-bottom:8px}
-.date{text-align:center;font-family:"Cormorant Garamond",serif;font-size:clamp(27px,6vw,40px);font-weight:700;color:var(--maroon);margin-bottom:20px}
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:min(590px,100%);margin:auto}
-.unit{position:relative;border:1px solid rgba(184,135,50,.68);border-radius:12px;padding:15px 5px 11px;background:linear-gradient(180deg,rgba(255,255,255,.84),rgba(248,229,186,.72));box-shadow:0 5px 12px rgba(88,51,25,.07)}
-.unit:before{content:"✦";position:absolute;top:4px;left:7px;font-size:9px;color:var(--gold)}
-.number{font-family:"Cormorant Garamond",serif;font-size:clamp(32px,7vw,52px);font-weight:700;line-height:.9;color:var(--maroon)}
-.label{text-transform:uppercase;letter-spacing:1.4px;font-size:9px;color:#7b5a37;margin-top:9px}
-.message{text-align:center;font-family:"Cormorant Garamond",serif;font-size:22px;font-style:italic;color:var(--leaf);margin:26px 0 14px}
-.motifs{display:flex;justify-content:space-between;align-items:end;margin:5px 8px 0;opacity:.92}
-.lamp{font-size:50px;filter:drop-shadow(0 4px 3px rgba(100,56,10,.16))}
-.kalash{font-size:58px}
-.footer{text-align:center;color:#77543c;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;margin-top:14px}
-@media(max-width:480px){.page{padding:0 13px 28px}.page:before{inset:7px}.toran{margin:0 -13px 8px;gap:7px;height:82px}.toran span{transform:scale(.82);transform-origin:top}.ganesha{width:108px;height:108px}.surname{font-size:12px;letter-spacing:2px}.first{font-size:55px}.countdown{gap:6px}.unit{padding:13px 3px 10px}.label{font-size:8px;letter-spacing:.8px}.message{font-size:19px}}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif:wght@400;500;600;700&display=swap');
+:root{--wine:#6b231d;--gold:#b88936;--cream:#fff8e9;--green:#3f5f45;--orange:#c96b27}
+*{box-sizing:border-box}html,body{margin:0;background:#f4e2b9;color:#51342a}body{font-family:"Noto Serif",serif}
+.page{width:min(820px,100%);min-height:100vh;margin:auto;padding:18px 28px 48px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 50% 34%,#fffdf6 0,#fff8e9 48%,#f3dfb4 100%)}
+.page:before,.page:after{content:"";position:absolute;inset:9px;border:2px solid var(--gold);pointer-events:none}.page:after{inset:18px;border:1px solid rgba(184,137,54,.5)}
+.top-floral{height:128px;margin:-18px -28px 0;position:relative;overflow:hidden;background:
+radial-gradient(circle at 8% 22%,#ffe9a5 0 7px,transparent 8px),radial-gradient(circle at 15% 38%,#e77b58 0 6px,transparent 7px),radial-gradient(circle at 25% 20%,#ffe9a5 0 7px,transparent 8px),radial-gradient(circle at 78% 25%,#ffe9a5 0 7px,transparent 8px),radial-gradient(circle at 90% 45%,#e77b58 0 6px,transparent 7px),linear-gradient(180deg,#2f572f 0 18px,#f6d59a 19px 21px,transparent 22px)}
+.garlands{display:flex;justify-content:space-around;position:absolute;inset:18px 35px auto;height:104px}.garland{width:18px;height:105px;background:radial-gradient(circle,#fff2c5 0 5px,transparent 6px) center 0/18px 18px;position:relative}.garland:after{content:"";position:absolute;left:6px;top:18px;width:7px;height:70px;background:radial-gradient(circle,#c64636 0 4px,transparent 5px) center/8px 26px}
+.bells{display:flex;justify-content:space-between;padding:0 54px;margin-top:-35px;position:relative;z-index:2}.bell{font-size:48px;color:#9a5c1c;text-shadow:0 2px #f2c55b}
+.hero{text-align:center;position:relative;z-index:2}.ganesha{width:122px;height:122px;margin:0 auto 2px;display:block;filter:drop-shadow(0 4px 5px rgba(80,45,15,.16))}.invocation{font-size:16px;color:#80521d;letter-spacing:3px;font-weight:700;margin:2px 0 12px}.blessing{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--green);margin:0 0 26px}
+.arch{border:2px solid var(--gold);border-bottom:0;border-radius:180px 180px 0 0;padding:26px 18px 0;margin:0 auto;width:min(670px,96%);box-shadow:0 -8px 0 rgba(184,137,54,.08)}
+.surname{font-size:17px;letter-spacing:5px;color:#6b533b;text-transform:uppercase}.first{font-family:"Great Vibes",cursive;color:var(--wine);font-size:clamp(68px,13vw,108px);line-height:.88;margin:5px 0}.and{font-family:"Cormorant Garamond",serif;font-size:31px;font-style:italic;color:var(--gold);margin:6px 0}.divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:26px auto 20px;width:min(620px,88%)}.tag{font-style:italic;color:#70442f;font-size:18px;letter-spacing:1px}
+.count-label{color:var(--green);letter-spacing:4px;font-size:13px;text-transform:uppercase;margin:34px 0 8px}.date{font-family:"Cormorant Garamond",serif;color:var(--wine);font-weight:700;font-size:clamp(34px,7vw,54px);margin-bottom:24px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:auto;width:min(660px,100%)}.unit{background:linear-gradient(135deg,#fffdf7,#f7e7c5);border:1.5px solid rgba(184,137,54,.75);border-radius:16px;padding:18px 6px 13px;box-shadow:0 8px 18px rgba(100,65,25,.08);position:relative}.unit:before{content:"✦";position:absolute;left:10px;top:7px;color:var(--gold);font-size:10px}.number{font-family:"Cormorant Garamond",serif;color:var(--wine);font-size:clamp(40px,9vw,64px);font-weight:700;line-height:.9}.label{font-size:10px;letter-spacing:2px;color:#75543c;margin-top:9px;text-transform:uppercase}
+.message{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:24px;color:var(--green);margin:34px auto 10px;text-align:center}.venue{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:22px 0;color:#70442f;font-size:14px;letter-spacing:1.4px}.venue span{padding:10px 18px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.bottom{margin:20px -12px -48px;min-height:250px;position:relative;background:linear-gradient(180deg,transparent,#ead1a0)}.lamp{position:absolute;font-size:78px;bottom:36px;filter:drop-shadow(0 4px 5px rgba(70,40,10,.2))}.lamp.l{left:8%}.lamp.r{right:8%}.lotus{position:absolute;font-size:66px;bottom:5px}.lotus.l{left:1%}.lotus.r{right:1%}.couple{text-align:center;padding-top:45px;font-size:88px;letter-spacing:10px}.forever{display:block;margin:8px auto 0;width:max-content;max-width:92%;padding:10px 32px;border:1px solid var(--gold);background:#6b231d;color:#f5d78c;letter-spacing:5px;font-size:12px}
+@media(max-width:520px){.page{padding:12px 14px 42px}.top-floral{margin:-12px -14px 0;height:104px}.garlands{inset:15px 10px auto}.garland:nth-child(n+9){display:none}.bells{padding:0 28px}.bell{font-size:37px}.arch{padding-top:20px}.surname{font-size:12px;letter-spacing:3px}.first{font-size:65px}.countdown{gap:6px}.unit{padding:15px 3px 11px}.label{font-size:8px;letter-spacing:1px}.message{font-size:20px}.couple{font-size:66px}.lamp{font-size:60px}}
 </style>
 </head>
 <body>
 <main class="page">
-<section class="top">
-<div class="toran" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-<div class="ganesha-wrap">
-<svg class="ganesha" viewBox="0 0 200 200" role="img" aria-label="Lord Ganesha illustration">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#9b6424"/><stop offset=".5" stop-color="#d8a547"/><stop offset="1" stop-color="#8b531d"/></linearGradient></defs>
-<circle cx="100" cy="100" r="92" fill="none" stroke="url(#g)" stroke-width="2"/>
-<path d="M74 59 Q100 20 126 59 L116 72 Q100 61 84 72Z" fill="url(#g)"/>
-<path d="M73 72 Q44 55 43 91 Q45 113 69 111 Q61 91 73 72ZM127 72 Q156 55 157 91 Q155 113 131 111 Q139 91 127 72Z" fill="url(#g)"/>
-<path d="M70 65 Q100 48 130 65 Q145 81 135 113 Q128 136 111 146 Q101 153 91 146 Q72 136 65 113 Q55 81 70 65Z" fill="#f5d9a1" stroke="url(#g)" stroke-width="3"/>
-<path d="M88 85 Q94 79 99 85 Q104 79 110 85" fill="none" stroke="#5e351d" stroke-width="3" stroke-linecap="round"/>
-<circle cx="88" cy="82" r="3" fill="#3d261b"/><circle cx="112" cy="82" r="3" fill="#3d261b"/>
-<path d="M100 91 Q86 104 93 125 Q97 137 106 132 Q118 124 110 111 Q105 103 116 100" fill="none" stroke="#9b6424" stroke-width="9" stroke-linecap="round"/>
-<path d="M81 116 Q65 134 72 158 M119 116 Q135 134 128 158" fill="none" stroke="#9b6424" stroke-width="9" stroke-linecap="round"/>
-<path d="M65 159 Q100 178 135 159 Q129 184 100 187 Q71 184 65 159Z" fill="url(#g)"/>
-<path d="M100 66 L100 76" stroke="#9b2323" stroke-width="4"/><circle cx="100" cy="77" r="2" fill="#9b2323"/>
-</svg>
-</div>
-<p class="invocation">॥ श्री गणेशाय नमः ॥</p>
-<p class="divine">With the divine blessings of Lord Ganesha</p>
-</section>
-
-<section class="names">
-<span class="surname">Gundepudi</span>
-<span class="first">Bharadvaja</span>
+<div class="top-floral"><div class="garlands"><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i><i class="garland"></i></div></div>
+<div class="bells"><span class="bell">🔔</span><span class="bell">🔔</span></div>
+<section class="hero">
+<svg class="ganesha" viewBox="0 0 200 200" aria-label="Lord Ganesha"><defs><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#9a621f"/><stop offset=".5" stop-color="#e1b14e"/><stop offset="1" stop-color="#8c5519"/></linearGradient></defs><circle cx="100" cy="100" r="91" fill="#fff8e8" stroke="url(#gold)" stroke-width="2"/><path d="M75 59Q100 21 125 59L116 73Q100 63 84 73Z" fill="url(#gold)"/><path d="M73 71Q44 56 43 92Q47 113 70 109Q62 88 73 71ZM127 71Q156 56 157 92Q153 113 130 109Q138 88 127 71Z" fill="url(#gold)"/><path d="M70 64Q100 49 130 64Q146 82 136 113Q129 137 111 147Q100 153 89 147Q71 137 64 113Q54 82 70 64Z" fill="#f4d79d" stroke="url(#gold)" stroke-width="3"/><circle cx="88" cy="83" r="3"/><circle cx="112" cy="83" r="3"/><path d="M100 91Q85 105 93 126Q99 140 108 132Q120 122 111 110Q106 102 117 99" fill="none" stroke="#9a621f" stroke-width="9" stroke-linecap="round"/><path d="M100 65V76" stroke="#8f2c24" stroke-width="4"/><path d="M65 160Q100 179 135 160Q128 185 100 188Q72 185 65 160Z" fill="url(#gold)"/></svg>
+<div class="invocation">॥ श्री गणेशाय नमः ॥</div>
+<div class="blessing">With the divine blessings of Lord Ganesha</div>
+<div class="arch">
+<div class="surname">Gundepudi</div><div class="first">Bharadvaja</div>
 <div class="and">&amp;</div>
-<span class="surname">Kannekanti</span>
-<span class="first">Lalitha</span>
-</section>
-
-<div class="rule"></div>
-<div class="count-title">Counting down to the auspicious celebration</div>
+<div class="surname">Kannekanti</div><div class="first">Lalitha</div>
+</div>
+<div class="divider"></div><div class="tag">The beginning of our forever is getting closer</div>
+<div class="count-label">Counting down to the auspicious celebration</div>
 <div class="date">21 November 2026</div>
-
-<section class="countdown" aria-label="Wedding countdown">
+<div class="countdown">
 <div class="unit"><div class="number" id="days">--</div><div class="label">Days</div></div>
 <div class="unit"><div class="number" id="hours">--</div><div class="label">Hours</div></div>
 <div class="unit"><div class="number" id="minutes">--</div><div class="label">Minutes</div></div>
 <div class="unit"><div class="number" id="seconds">--</div><div class="label">Seconds</div></div>
+</div>
+<div class="message">Looking forward to your presence to make our day special</div>
+<div class="venue"><span>📅 Saturday • 21 Nov 2026</span><span>📍 Nalgonda, Telangana, India</span></div>
 </section>
-
-<div class="message" id="message">The beginning of our forever is getting closer</div>
-<div class="motifs" aria-hidden="true"><div class="lamp">🪔</div><div class="kalash">🌿</div><div class="lamp">🪔</div></div>
-<div class="footer">With love, prayers & blessings • 21.11.2026</div>
+<div class="bottom"><div class="lamp l">🪔</div><div class="lamp r">🪔</div><div class="lotus l">🪷</div><div class="lotus r">🪷</div><div class="couple">👰🏽‍♀️ 💍 🤵🏽</div><div class="forever">✦ TOGETHER ALWAYS ✦</div></div>
 </main>
 <script>
-const weddingDate=new Date("2026-11-21T00:00:00+05:30");
-function updateCountdown(){
- let diff=weddingDate-new Date();
- if(diff<=0){["days","hours","minutes","seconds"].forEach(id=>document.getElementById(id).textContent="0");document.getElementById("message").textContent="Today is the auspicious day!";return;}
- const d=Math.floor(diff/86400000);diff%=86400000;
- const h=Math.floor(diff/3600000);diff%=3600000;
- const m=Math.floor(diff/60000);const s=Math.floor(diff%60000/1000);
- document.getElementById("days").textContent=d;
- document.getElementById("hours").textContent=String(h).padStart(2,"0");
- document.getElementById("minutes").textContent=String(m).padStart(2,"0");
- document.getElementById("seconds").textContent=String(s).padStart(2,"0");
-}
-updateCountdown();setInterval(updateCountdown,1000);
+const target=new Date("2026-11-21T00:00:00+05:30");
+function tick(){let d=target-new Date();if(d<0)d=0;const days=Math.floor(d/86400000);d%=86400000;const hrs=Math.floor(d/3600000);d%=3600000;const mins=Math.floor(d/60000);const secs=Math.floor((d%60000)/1000);document.getElementById("days").textContent=days;document.getElementById("hours").textContent=String(hrs).padStart(2,"0");document.getElementById("minutes").textContent=String(mins).padStart(2,"0");document.getElementById("seconds").textContent=String(secs).padStart(2,"0")}
+tick();setInterval(tick,1000);
 </script>
-</body>
-</html>
+</body></html>
