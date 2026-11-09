@@ -58,6 +58,67 @@ section.invite-page{min-height:100svh;scroll-snap-align:start;display:grid;place
  .invite-page .scroll-note{bottom:9px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.petal{display:none}.scroll-note:after{animation:none}}
+
+/* Richer ceremony-specific colour washes and paper finish */
+body{
+ background:
+  radial-gradient(ellipse at 12% 10%,#e8c9c5 0,transparent 32%),
+  radial-gradient(ellipse at 88% 88%,#c9d8b6 0,transparent 35%),
+  #e9dfcc;
+}
+section.invite-page{
+ background:
+  radial-gradient(ellipse at 8% 8%,rgba(216,164,154,.38),transparent 38%),
+  radial-gradient(ellipse at 92% 90%,rgba(143,170,119,.32),transparent 42%),
+  linear-gradient(145deg,#f8eddd,#f1e6d4 58%,#e9eadb);
+}
+.invite-page:nth-child(2){
+ background:
+  radial-gradient(ellipse at 14% 18%,rgba(246,194,92,.48),transparent 38%),
+  radial-gradient(ellipse at 88% 82%,rgba(188,157,77,.34),transparent 42%),
+  linear-gradient(145deg,#fff0c9,#f7e5b4 55%,#e9e5c8);
+}
+.invite-page:nth-child(3){
+ background:
+  radial-gradient(ellipse at 85% 14%,rgba(225,157,170,.42),transparent 38%),
+  radial-gradient(ellipse at 10% 86%,rgba(126,158,105,.36),transparent 42%),
+  linear-gradient(145deg,#f9e8e2,#f1e1d8 55%,#e5ead8);
+}
+.invite-page:nth-child(4){
+ background:
+  radial-gradient(ellipse at 12% 12%,rgba(197,166,104,.4),transparent 38%),
+  radial-gradient(ellipse at 88% 88%,rgba(132,163,119,.38),transparent 42%),
+  linear-gradient(145deg,#f5ecd6,#efe4c9 55%,#e3eadb);
+}
+.invite-page:nth-child(5){
+ background:
+  radial-gradient(ellipse at 84% 12%,rgba(216,153,145,.46),transparent 38%),
+  radial-gradient(ellipse at 10% 88%,rgba(129,164,145,.38),transparent 42%),
+  linear-gradient(145deg,#f8e4d9,#f1dfd3 55%,#e1e9df);
+}
+.invite-page:nth-child(6){
+ background:
+  radial-gradient(ellipse at 12% 10%,rgba(218,190,128,.42),transparent 38%),
+  radial-gradient(ellipse at 88% 88%,rgba(143,167,120,.34),transparent 42%),
+  linear-gradient(145deg,#f8efd9,#eee7d2 55%,#e4eadc);
+}
+.sheet{
+ background:
+  radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.95),transparent 48%),
+  radial-gradient(ellipse at 0% 100%,rgba(229,207,157,.24),transparent 45%),
+  linear-gradient(160deg,#fffdf5 0%,#fbf3e2 52%,#f4ecd9 100%);
+}
+.sheet:before{border-color:#c5a76e}
+.sheet:after{border-color:#ead9b4}
+.eyebrow{color:#637653}
+.date{color:#42664a}
+.small-label{color:#a1844d}
+.art{
+ border-top:1px solid rgba(182,154,98,.45);
+ border-bottom:1px solid rgba(182,154,98,.35);
+ box-shadow:0 -8px 20px rgba(255,255,255,.18),0 8px 20px rgba(94,91,63,.08);
+}
+
 </style>
 </head>
 <body>
