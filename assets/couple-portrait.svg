@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" role="img" aria-label="Illustrated South Indian bride and groom">
+ <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fff4df"/><stop offset="1" stop-color="#f1dfc8"/></linearGradient><linearGradient id="saree" x2="1" y2="1"><stop stop-color="#d86c86"/><stop offset="1" stop-color="#8e3155"/></linearGradient></defs>
+ <rect width="700" height="760" rx="20" fill="url(#bg)"/>
+ <g fill="none" stroke="#79965f" stroke-width="7"><path d="M0 160Q130 40 220 155T430 120T700 110"/><path d="M35 0Q60 120 20 280M660 0Q630 120 680 280"/></g>
+ <g fill="#7d9d66"><ellipse cx="70" cy="100" rx="55" ry="20" transform="rotate(30 70 100)"/><ellipse cx="160" cy="68" rx="50" ry="18" transform="rotate(-20 160 68)"/><ellipse cx="590" cy="95" rx="55" ry="20" transform="rotate(-30 590 95)"/></g>
+ <g fill="#e69baa"><g transform="translate(95 150)"><ellipse cy="-25" rx="19" ry="32"/><ellipse cx="25" rx="19" ry="32" transform="rotate(90 25 0)"/><ellipse cy="25" rx="19" ry="32"/><ellipse cx="-25" rx="19" ry="32" transform="rotate(90 -25 0)"/><circle r="12" fill="#e7c56f"/></g><g transform="translate(600 155)"><ellipse cy="-25" rx="19" ry="32"/><ellipse cx="25" rx="19" ry="32" transform="rotate(90 25 0)"/><ellipse cy="25" rx="19" ry="32"/><ellipse cx="-25" rx="19" ry="32" transform="rotate(90 -25 0)"/><circle r="12" fill="#e7c56f"/></g></g>
+ <!-- groom -->
+ <g transform="translate(395 310)">
+  <path d="M-100 400Q-110 245-65 150Q-35 105 5 140Q60 200 70 400Z" fill="#e2c17b"/>
+  <path d="M-20 160Q10 220 30 400" stroke="#fff0cf" stroke-width="28" fill="none"/>
+  <circle cx="-28" cy="70" r="60" fill="#c88f6d"/>
+  <path d="M-87 57Q-84-15-25-10Q35-14 33 60Q3 22-87 57Z" fill="#3d332e"/>
+  <path d="M-76 100Q-30 126 18 100" stroke="#67453b" stroke-width="6" fill="none"/>
+  <path d="M-58 180Q-15 220 22 184" stroke="#f2dfbd" stroke-width="10" fill="none"/>
+ </g>
+ <!-- bride -->
+ <g transform="translate(245 330)">
+  <path d="M-120 390Q-145 225-85 150Q-35 95 22 150Q85 230 100 390Z" fill="url(#saree)"/>
+  <path d="M-104 390Q-65 245-35 160Q-4 240 22 390" fill="none" stroke="#e6be6a" stroke-width="9"/>
+  <path d="M-85 155Q-130 55-72 4Q-20-34 25 20Q55 80 15 155Z" fill="#42352f"/>
+  <circle cx="-30" cy="60" r="57" fill="#d5a07c"/>
+  <path d="M-88 45Q-80-18-25-7Q25-15 29 47Q-12 10-88 45Z" fill="#3c302b"/>
+  <path d="M-84 92Q-30 125 23 92" stroke="#b36b5a" stroke-width="5" fill="none"/>
+  <path d="M-78 18Q-30-8 16 18" stroke="#d6b25e" stroke-width="8" fill="none"/>
+  <g fill="#e8c879"><circle cx="-80" cy="80" r="7"/><circle cx="-30" cy="119" r="7"/><circle cx="20" cy="80" r="7"/></g>
+  <path d="M-70 2Q-95-40-62-65Q-20-95 12-55Q32-25 5-4" fill="#463630"/>
+  <path d="M-105 20Q-125-10-100-35Q-75-55-55-30" fill="none" stroke="#f4e5c7" stroke-width="18"/>
+ </g>
+ <g fill="#e7c77b"><circle cx="100" cy="600" r="8"/><circle cx="135" cy="630" r="6"/><circle cx="580" cy="610" r="8"/></g>
+ <path d="M0 700Q160 650 350 700T700 690V760H0Z" fill="#d4c99e" opacity=".45"/>
+ </svg>
