@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="mehendi watercolor ceremony illustration">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f4dedb"/><stop offset="1" stop-color="#f2cbd0"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#c5d6c7"/><stop offset="1" stop-color="#eee2c5"/></linearGradient></defs>
+  <rect width="1000" height="600" fill="url(#sky)"/>
+  <circle cx="820" cy="120" r="64" fill="#fff0c6" opacity=".72"/>
+  <path d="M0 290Q140 220 260 270T500 255T760 270T1000 250V600H0Z" fill="#9bad83" opacity=".35"/>
+  
+      <path d="M0 400 Q170 325 340 390 T700 370 T1000 390 V600 H0Z" fill="#9ab28b"/>
+      <path d="M0 475 Q220 400 430 470 T800 445 T1000 470 V600 H0Z" fill="#718f70"/>
+      <g transform="translate(500 405)"><path d="M-130 170V-30Q-130-75-80-75H80Q130-75 130-30V170" fill="none" stroke="#ad8352" stroke-width="18"/><path d="M-110 0Q0-60 110 0" fill="none" stroke="#e8c78b" stroke-width="12"/><rect x="-105" y="105" width="210" height="18" rx="8" fill="#b98959"/><path d="M-90 123V175M90 123V175" stroke="#987149" stroke-width="12"/></g>
+      <g fill="#e8a0b1"><circle cx="170" cy="360" r="13"/><circle cx="220" cy="390" r="10"/><circle cx="790" cy="355" r="13"/><circle cx="840" cy="390" r="10"/></g>
+    
+  <g fill="none" stroke="#fff7e6" stroke-width="4" opacity=".6"><path d="M0 520Q240 480 480 520T1000 510"/><path d="M0 555Q240 525 480 555T1000 545"/></g>
+  <g fill="#78965d" opacity=".8"><path d="M0 0Q90 40 110 180Q55 140 0 160Z"/><path d="M1000 0Q910 40 890 180Q945 140 1000 160Z"/></g>
+  <g fill="#e6a0ae"><circle cx="65" cy="80" r="12"/><circle cx="95" cy="105" r="8"/><circle cx="930" cy="80" r="12"/><circle cx="900" cy="105" r="8"/></g>
+  <rect width="1000" height="600" fill="#fff8e9" opacity=".08"/>
+  </svg>
