@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="haldi watercolor ceremony illustration">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f7e5a9"/><stop offset="1" stop-color="#f5ce75"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#c5d6c7"/><stop offset="1" stop-color="#eee2c5"/></linearGradient></defs>
+  <rect width="1000" height="600" fill="url(#sky)"/>
+  <circle cx="820" cy="120" r="64" fill="#fff0c6" opacity=".72"/>
+  <path d="M0 290Q140 220 260 270T500 255T760 270T1000 250V600H0Z" fill="#a5b66f" opacity=".35"/>
+  
+      <path d="M0 410 Q160 330 320 400 T650 385 T1000 400 V600 H0Z" fill="#a7b76c"/>
+      <path d="M0 470 Q180 405 360 465 T720 440 T1000 465 V600 H0Z" fill="#7e9b58"/>
+      <g fill="#f4c64f"><circle cx="110" cy="390" r="12"/><circle cx="170" cy="430" r="10"/><circle cx="250" cy="400" r="13"/><circle cx="790" cy="405" r="12"/><circle cx="870" cy="430" r="10"/><circle cx="940" cy="390" r="13"/></g>
+      <g stroke="#68874c" stroke-width="5"><path d="M120 600Q95 480 120 340"/><path d="M870 600Q900 480 870 340"/></g>
+      <g fill="#f0b83f"><circle cx="120" cy="340" r="28"/><circle cx="870" cy="340" r="28"/></g>
+    
+  <g fill="none" stroke="#fff7e6" stroke-width="4" opacity=".6"><path d="M0 520Q240 480 480 520T1000 510"/><path d="M0 555Q240 525 480 555T1000 545"/></g>
+  <g fill="#78965d" opacity=".8"><path d="M0 0Q90 40 110 180Q55 140 0 160Z"/><path d="M1000 0Q910 40 890 180Q945 140 1000 160Z"/></g>
+  <g fill="#e6a0ae"><circle cx="65" cy="80" r="12"/><circle cx="95" cy="105" r="8"/><circle cx="930" cy="80" r="12"/><circle cx="900" cy="105" r="8"/></g>
+  <rect width="1000" height="600" fill="#fff8e9" opacity=".08"/>
+  </svg>
