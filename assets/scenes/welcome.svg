@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="welcome watercolor ceremony illustration">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dce9e1"/><stop offset="1" stop-color="#f6e5ce"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#c5d6c7"/><stop offset="1" stop-color="#eee2c5"/></linearGradient></defs>
+  <rect width="1000" height="600" fill="url(#sky)"/>
+  <circle cx="820" cy="120" r="64" fill="#fff0c6" opacity=".72"/>
+  <path d="M0 290Q140 220 260 270T500 255T760 270T1000 250V600H0Z" fill="#91aa91" opacity=".35"/>
+  
+      <path d="M0 390 Q180 300 340 385 T700 360 T1000 370 V600 H0Z" fill="#8da987" opacity=".55"/>
+      <path d="M0 445 Q180 380 360 435 T700 420 T1000 430 V600 H0Z" fill="#6f9077" opacity=".72"/>
+      <path d="M0 500 Q250 455 500 500 T1000 480 V600 H0Z" fill="#c2d3c4"/>
+      <g fill="#e7a0ae"><circle cx="100" cy="390" r="12"/><circle cx="140" cy="420" r="9"/><circle cx="880" cy="385" r="12"/><circle cx="920" cy="420" r="9"/></g>
+      <g fill="#e6c477"><circle cx="820" cy="115" r="54"/></g>
+      <path d="M0 600Q120 470 220 600M780 600Q870 470 1000 600" fill="#82996d"/>
+    
+  <g fill="none" stroke="#fff7e6" stroke-width="4" opacity=".6"><path d="M0 520Q240 480 480 520T1000 510"/><path d="M0 555Q240 525 480 555T1000 545"/></g>
+  <g fill="#78965d" opacity=".8"><path d="M0 0Q90 40 110 180Q55 140 0 160Z"/><path d="M1000 0Q910 40 890 180Q945 140 1000 160Z"/></g>
+  <g fill="#e6a0ae"><circle cx="65" cy="80" r="12"/><circle cx="95" cy="105" r="8"/><circle cx="930" cy="80" r="12"/><circle cx="900" cy="105" r="8"/></g>
+  <rect width="1000" height="600" fill="#fff8e9" opacity=".08"/>
+  </svg>
