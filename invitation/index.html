@@ -212,6 +212,12 @@ section.invite-page{
  .hanging{height:125px}
 }
 
+
+/* Load the dedicated GitHub-hosted watercolor artwork for each ceremony */
+.art{background:#f4ead8;overflow:hidden}
+.art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.art img.couple-art{object-fit:cover;object-position:center 34%;background:#f7ead8}
+
 </style>
 </head>
 <body>
@@ -238,65 +244,11 @@ section.invite-page{
 <main id="pages"></main>
 <script>
 function scenery(kind){
- const colors={
-  welcome:['#d9e8df','#f4e7c9','#91aa91','#718d77'],
-  haldi:['#f4e5b5','#f8d982','#a5b66f','#7d9a5b'],
-  mehendi:['#e6e8d9','#f4d7d0','#9bad83','#718a68'],
-  ankur:['#dce9df','#f2dfbd','#a8b68c','#789477'],
-  wedding:['#dce8e7','#f5d6c0','#9eae91','#698b78'],
-  vratham:['#e8e8d5','#f1dfb9','#a6b68a','#748d70']
- }[kind];
- const isNight=kind==='wedding';
- return `<svg viewBox="0 0 500 340" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Watercolor garden and hills illustration">
- <defs><linearGradient id="sky-${kind}" x2="0" y2="1"><stop stop-color="${colors[0]}"/><stop offset="1" stop-color="${colors[1]}"/></linearGradient><linearGradient id="lake-${kind}" x2="0" y2="1"><stop stop-color="#b4c9bd"/><stop offset="1" stop-color="#e0d8bb"/></linearGradient></defs>
- <rect width="500" height="340" fill="url(#sky-${kind})"/>
- <circle cx="375" cy="75" r="35" fill="#f9e3b3" opacity=".72"/>
- <path d="M0 196Q75 135 144 183T280 163T500 177V340H0Z" fill="${colors[2]}" opacity=".65"/>
- <path d="M0 220Q85 167 167 210T320 195T500 211V340H0Z" fill="${colors[3]}" opacity=".72"/>
- <path d="M0 250Q110 216 215 244T500 235V340H0Z" fill="url(#lake-${kind})"/>
- <path d="M0 275Q110 255 220 275T500 265" stroke="#fff8e8" stroke-width="2" fill="none" opacity=".7"/>
- <path d="M0 297Q120 280 240 299T500 290" stroke="#fff8e8" stroke-width="1.5" fill="none" opacity=".6"/>
- <!-- flowering trees -->
- <g stroke="#6e815b" stroke-width="5" fill="none"><path d="M25 270Q40 190 30 105"/><path d="M470 275Q455 180 475 90"/></g>
- <g fill="#7d9c70" opacity=".9"><circle cx="25" cy="100" r="49"/><circle cx="65" cy="119" r="39"/><circle cx="0" cy="146" r="42"/><circle cx="466" cy="93" r="53"/><circle cx="430" cy="123" r="40"/><circle cx="500" cy="145" r="43"/></g>
- <g fill="#e9a5ae"><circle cx="20" cy="89" r="7"/><circle cx="54" cy="102" r="6"/><circle cx="3" cy="139" r="6"/><circle cx="452" cy="82" r="7"/><circle cx="482" cy="118" r="6"/><circle cx="425" cy="131" r="6"/></g>
- <!-- little garden flowers -->
- <g fill="#f1d8a0"><circle cx="80" cy="300" r="5"/><circle cx="96" cy="287" r="4"/><circle cx="405" cy="300" r="5"/><circle cx="424" cy="286" r="4"/></g>
- <!-- illustrated bride and groom in traditional South Indian wedding attire -->
- <g transform="translate(250 207)" stroke-linejoin="round">
-  <ellipse cx="0" cy="118" rx="92" ry="13" fill="#526b5a" opacity=".19"/>
-  <!-- bride's silk saree and pleats -->
-  <path d="M-82 112Q-94 66-67 29Q-48 7-20 24Q-3 40 3 112Z" fill="#b94d70"/>
-  <path d="M-77 106Q-57 69-48 38Q-26 61-18 112Z" fill="#d86e87"/>
-  <path d="M-63 45Q-35 72-26 112M-49 38Q-27 71-15 112" fill="none" stroke="#f1c77b" stroke-width="3" opacity=".9"/>
-  <path d="M-70 26Q-77 3-57-17Q-33-32-16-9Q-7 10-23 34Z" fill="#473b35"/>
-  <circle cx="-45" cy="4" r="20" fill="#d8a17d"/>
-  <path d="M-64-1Q-61-29-36-29Q-16-25-19-2Q-32-15-64-1Z" fill="#40352f"/>
-  <path d="M-63 16Q-43 31-23 15" fill="none" stroke="#f0c47d" stroke-width="4"/>
-  <path d="M-61 2Q-45-2-30 2" fill="none" stroke="#4b342f" stroke-width="2"/>
-  <circle cx="-45" cy="13" r="3" fill="#8d4a42"/>
-  <path d="M-51-17Q-43-25-35-17" fill="none" stroke="#d9b05e" stroke-width="4"/>
-  <circle cx="-45" cy="-23" r="5" fill="#e5c36f"/>
-  <!-- groom's cream-gold sherwani and angavastram -->
-  <path d="M-12 112Q-9 57 10 25Q34 8 56 27Q77 54 83 112Z" fill="#e0b45d"/>
-  <path d="M14 30Q37 53 48 112H28Q18 70 4 45Z" fill="#fff0cf"/>
-  <path d="M8 39Q26 63 29 112M58 40Q70 74 72 112" fill="none" stroke="#b9853e" stroke-width="2"/>
-  <path d="M-1 23Q-4-1 16-20Q42-34 59-12Q68 7 52 31Z" fill="#473c34"/>
-  <circle cx="29" cy="2" r="20" fill="#c99170"/>
-  <path d="M8-8Q14-31 41-27Q60-19 55 3Q43-12 8-8Z" fill="#3e352f"/>
-  <path d="M9 15Q28 25 48 14" fill="none" stroke="#694535" stroke-width="3"/>
-  <path d="M8-3Q27-9 48-3" fill="none" stroke="#fff0cf" stroke-width="2"/>
-  <!-- jasmine and gold garlands -->
-  <path d="M-62 28Q-48 65-15 48Q6 37 12 28" fill="none" stroke="#f3e7c9" stroke-width="6" stroke-linecap="round"/>
-  <path d="M7 25Q20 62 52 46Q61 39 65 28" fill="none" stroke="#f6e7c6" stroke-width="6" stroke-linecap="round"/>
-  <g fill="#d6b15f"><circle cx="-52" cy="43" r="3"/><circle cx="-37" cy="55" r="3"/><circle cx="-21" cy="55" r="3"/><circle cx="20" cy="43" r="3"/><circle cx="38" cy="53" r="3"/><circle cx="53" cy="43" r="3"/></g>
-  <!-- joined hands -->
-  <path d="M-9 59Q6 50 20 62" stroke="#d8a17d" stroke-width="9" fill="none" stroke-linecap="round"/>
-  <path d="M-5 58Q7 66 20 61" stroke="#c99170" stroke-width="5" fill="none" stroke-linecap="round"/>
- </g>
- <!-- watercolor paper grain -->
- <rect width="500" height="340" fill="#fff5dc" opacity=".08"/>
- </svg>`;
+ const file = kind === 'ankur' ? 'ankur' : kind;
+ if(kind === 'welcome'){
+  return '<img class="couple-art" src="../assets/couple-portrait.svg" alt="Watercolor illustration of a South Indian bride and groom">';
+ }
+ return '<img src="../assets/scenes/' + file + '.svg" alt="' + file + ' watercolor ceremony artwork">';
 }
 function frameArt(kind){return `<div class="art">${scenery(kind)}</div>`}
 function frameCorners(){return `<div class="hanging"><svg viewBox="0 0 500 150"><use href="#hanging-flowers"/></svg></div>
