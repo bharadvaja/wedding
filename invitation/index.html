@@ -119,6 +119,99 @@ section.invite-page{
  box-shadow:0 -8px 20px rgba(255,255,255,.18),0 8px 20px rgba(94,91,63,.08);
 }
 
+
+/* Full-bleed editorial layout with richer, ceremony-specific colour */
+body{
+ background:
+  radial-gradient(ellipse at 12% 12%,#e8c9bd 0,transparent 35%),
+  radial-gradient(ellipse at 88% 86%,#c7d4b5 0,transparent 38%),
+  #e9dfcc;
+}
+section.invite-page{
+ min-height:100svh;padding:10px;
+ background:
+  radial-gradient(ellipse at 7% 8%,rgba(213,157,143,.42),transparent 40%),
+  radial-gradient(ellipse at 93% 91%,rgba(139,166,119,.38),transparent 43%),
+  linear-gradient(135deg,#f7ead8 0%,#f2e5d2 54%,#e5eadb 100%);
+}
+.invite-page:nth-child(2){
+ background:
+  radial-gradient(ellipse at 10% 12%,rgba(244,191,91,.55),transparent 42%),
+  radial-gradient(ellipse at 90% 88%,rgba(190,159,78,.38),transparent 44%),
+  linear-gradient(135deg,#fff0c6,#f5dfa7 58%,#e6e7c8);
+}
+.invite-page:nth-child(3){
+ background:
+  radial-gradient(ellipse at 88% 10%,rgba(223,151,168,.52),transparent 42%),
+  radial-gradient(ellipse at 8% 90%,rgba(126,159,107,.43),transparent 45%),
+  linear-gradient(135deg,#f9e5e1,#f0d9d6 56%,#e0e9d7);
+}
+.invite-page:nth-child(4){
+ background:
+  radial-gradient(ellipse at 9% 10%,rgba(203,168,104,.48),transparent 42%),
+  radial-gradient(ellipse at 92% 88%,rgba(125,158,111,.42),transparent 44%),
+  linear-gradient(135deg,#f7ecd5,#eddfc0 56%,#e0e8d6);
+}
+.invite-page:nth-child(5){
+ background:
+  radial-gradient(ellipse at 88% 9%,rgba(218,145,139,.52),transparent 42%),
+  radial-gradient(ellipse at 8% 92%,rgba(119,159,144,.42),transparent 45%),
+  linear-gradient(135deg,#f8e1d5,#efd8d0 56%,#dce8df);
+}
+.invite-page:nth-child(6){
+ background:
+  radial-gradient(ellipse at 10% 9%,rgba(219,185,116,.48),transparent 42%),
+  radial-gradient(ellipse at 90% 90%,rgba(135,163,113,.4),transparent 45%),
+  linear-gradient(135deg,#f8eed8,#eee2c7 56%,#e1e9d9);
+}
+.sheet{
+ width:min(100%,1180px);
+ min-height:calc(100svh - 20px);
+ background:
+  radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.97),transparent 48%),
+  radial-gradient(ellipse at 0% 100%,rgba(229,205,151,.3),transparent 45%),
+  linear-gradient(160deg,#fffdf5 0%,#fbf1dc 52%,#f1e8d5 100%);
+ border-color:#bda16c;
+ box-shadow:0 22px 70px rgba(75,57,34,.22),inset 0 0 0 5px rgba(255,255,255,.42);
+}
+.sheet:before{border-color:#c4a36a;inset:11px}
+.sheet:after{border-color:#e4d1a8;inset:18px}
+.content{
+ min-height:calc(100svh - 20px);
+ padding:132px clamp(28px,7vw,100px) 0;
+}
+.names{font-size:clamp(44px,6vw,76px);text-shadow:0 1px 0 #fff8}
+.title{font-size:clamp(43px,5.8vw,70px);text-shadow:0 1px 0 #fff8}
+.eyebrow{color:#596e4e}
+.date{color:#365f42}
+.small-label{color:#987744}
+.art{
+ width:calc(100% + clamp(56px,14vw,200px));
+ height:clamp(300px,39vh,470px);
+ margin:24px calc(clamp(28px,7vw,100px) * -1) 0;
+ border-top:1px solid rgba(182,154,98,.58);
+ border-bottom:1px solid rgba(182,154,98,.42);
+ box-shadow:0 -12px 25px rgba(255,255,255,.24),0 10px 28px rgba(79,79,54,.12);
+}
+.art svg{filter:saturate(1.08) contrast(1.025)}
+.corner{width:clamp(150px,20vw,230px);height:clamp(180px,24vw,270px)}
+.hanging{height:clamp(145px,18vw,205px)}
+@media(min-width:760px){
+ section.invite-page{padding:10px}
+ .content{padding-top:clamp(120px,14vh,170px)}
+ .art{height:clamp(330px,40vh,480px)}
+}
+@media(max-width:540px){
+ section.invite-page{padding:0}
+ .sheet{width:100%;min-height:100svh}
+ .content{min-height:100svh;padding:112px 23px 0}
+ .names{font-size:clamp(39px,10vw,58px)}
+ .title{font-size:clamp(39px,9vw,52px)}
+ .art{width:calc(100% + 46px);height:clamp(250px,34vh,330px);margin:20px -23px 0}
+ .corner{width:112px;height:140px}
+ .hanging{height:125px}
+}
+
 </style>
 </head>
 <body>
@@ -169,17 +262,37 @@ function scenery(kind){
  <g fill="#e9a5ae"><circle cx="20" cy="89" r="7"/><circle cx="54" cy="102" r="6"/><circle cx="3" cy="139" r="6"/><circle cx="452" cy="82" r="7"/><circle cx="482" cy="118" r="6"/><circle cx="425" cy="131" r="6"/></g>
  <!-- little garden flowers -->
  <g fill="#f1d8a0"><circle cx="80" cy="300" r="5"/><circle cx="96" cy="287" r="4"/><circle cx="405" cy="300" r="5"/><circle cx="424" cy="286" r="4"/></g>
- <!-- couple, in understated storybook silhouette -->
- <g transform="translate(250 213)">
-  <ellipse cx="-16" cy="106" rx="52" ry="8" fill="#526b5a" opacity=".2"/>
-  <path d="M-48 102Q-65 49-39 16Q-14 4 0 43Q12 78 18 103Z" fill="#a94f68"/>
-  <path d="M-40 21Q-52-2-29-17Q-5-21 2 5L-6 32Z" fill="#473d34"/>
-  <circle cx="-24" cy="2" r="16" fill="#d5a27e"/>
-  <path d="M-9 40Q10 6 27 16Q49 28 52 103H5Z" fill="#d6a64e"/>
-  <circle cx="21" cy="1" r="16" fill="#c68d70"/>
-  <path d="M7-9Q14-31 38-17Q52-3 39 8Q35-12 7-9Z" fill="#3c3933"/>
-  <path d="M-10 31Q4 22 18 36" stroke="#f1d9b5" stroke-width="4" fill="none"/>
-  <path d="M-7 45Q-1 60 17 62" stroke="#d5a27e" stroke-width="8" stroke-linecap="round" fill="none"/>
+ <!-- illustrated bride and groom in traditional South Indian wedding attire -->
+ <g transform="translate(250 207)" stroke-linejoin="round">
+  <ellipse cx="0" cy="118" rx="92" ry="13" fill="#526b5a" opacity=".19"/>
+  <!-- bride's silk saree and pleats -->
+  <path d="M-82 112Q-94 66-67 29Q-48 7-20 24Q-3 40 3 112Z" fill="#b94d70"/>
+  <path d="M-77 106Q-57 69-48 38Q-26 61-18 112Z" fill="#d86e87"/>
+  <path d="M-63 45Q-35 72-26 112M-49 38Q-27 71-15 112" fill="none" stroke="#f1c77b" stroke-width="3" opacity=".9"/>
+  <path d="M-70 26Q-77 3-57-17Q-33-32-16-9Q-7 10-23 34Z" fill="#473b35"/>
+  <circle cx="-45" cy="4" r="20" fill="#d8a17d"/>
+  <path d="M-64-1Q-61-29-36-29Q-16-25-19-2Q-32-15-64-1Z" fill="#40352f"/>
+  <path d="M-63 16Q-43 31-23 15" fill="none" stroke="#f0c47d" stroke-width="4"/>
+  <path d="M-61 2Q-45-2-30 2" fill="none" stroke="#4b342f" stroke-width="2"/>
+  <circle cx="-45" cy="13" r="3" fill="#8d4a42"/>
+  <path d="M-51-17Q-43-25-35-17" fill="none" stroke="#d9b05e" stroke-width="4"/>
+  <circle cx="-45" cy="-23" r="5" fill="#e5c36f"/>
+  <!-- groom's cream-gold sherwani and angavastram -->
+  <path d="M-12 112Q-9 57 10 25Q34 8 56 27Q77 54 83 112Z" fill="#e0b45d"/>
+  <path d="M14 30Q37 53 48 112H28Q18 70 4 45Z" fill="#fff0cf"/>
+  <path d="M8 39Q26 63 29 112M58 40Q70 74 72 112" fill="none" stroke="#b9853e" stroke-width="2"/>
+  <path d="M-1 23Q-4-1 16-20Q42-34 59-12Q68 7 52 31Z" fill="#473c34"/>
+  <circle cx="29" cy="2" r="20" fill="#c99170"/>
+  <path d="M8-8Q14-31 41-27Q60-19 55 3Q43-12 8-8Z" fill="#3e352f"/>
+  <path d="M9 15Q28 25 48 14" fill="none" stroke="#694535" stroke-width="3"/>
+  <path d="M8-3Q27-9 48-3" fill="none" stroke="#fff0cf" stroke-width="2"/>
+  <!-- jasmine and gold garlands -->
+  <path d="M-62 28Q-48 65-15 48Q6 37 12 28" fill="none" stroke="#f3e7c9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M7 25Q20 62 52 46Q61 39 65 28" fill="none" stroke="#f6e7c6" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#d6b15f"><circle cx="-52" cy="43" r="3"/><circle cx="-37" cy="55" r="3"/><circle cx="-21" cy="55" r="3"/><circle cx="20" cy="43" r="3"/><circle cx="38" cy="53" r="3"/><circle cx="53" cy="43" r="3"/></g>
+  <!-- joined hands -->
+  <path d="M-9 59Q6 50 20 62" stroke="#d8a17d" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M-5 58Q7 66 20 61" stroke="#c99170" stroke-width="5" fill="none" stroke-linecap="round"/>
  </g>
  <!-- watercolor paper grain -->
  <rect width="500" height="340" fill="#fff5dc" opacity=".08"/>
