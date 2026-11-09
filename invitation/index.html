@@ -114,6 +114,46 @@ section.invite-page{min-height:100svh;scroll-snap-align:start;display:grid;place
  .invite-copy{font-size:13px}
  .title{font-size:clamp(34px,8.8vw,46px)}
 }
+
+/* Final full-bleed background treatment: text sits directly over each floral panel */
+#pages .invite-page{padding:0;min-height:100svh}
+#pages .invite-page .sheet{
+ width:100%;max-width:none;min-height:100svh;height:100svh;
+ border:0;box-shadow:none;border-radius:0;
+ background-image:linear-gradient(rgba(255,250,238,.12),rgba(255,250,238,.12)),url('../assets/ceremony-scenes.webp');
+ background-repeat:no-repeat;
+ background-size:300% auto;
+ background-position:center,0% 0%;
+}
+#pages #welcome .sheet{background-position:center,0% 0%}
+#pages #haldi .sheet{background-position:center,50% 0%}
+#pages #mehendi .sheet{background-position:center,100% 0%}
+#pages #ankurarpana .sheet{background-position:center,0% 100%}
+#pages #wedding .sheet{background-position:center,50% 100%}
+#pages #vratham .sheet{background-position:center,100% 100%}
+#pages .invite-page .content{
+ width:min(calc(100% - 48px),760px);min-height:100svh;height:100svh;
+ margin:0 auto;padding:clamp(80px,12vh,130px) 28px 64px;
+ background:transparent;border:0;border-radius:0;box-shadow:none;
+ backdrop-filter:none;justify-content:center;
+}
+#pages .invite-page .art{display:none!important}
+#pages .invite-page .hanging{opacity:.95}
+#pages .invite-page .corner{opacity:.96}
+#pages .invite-page .scroll-note{bottom:10px}
+@media (orientation:portrait){
+ #pages .invite-page .sheet{background-size:auto 200%}
+}
+@media(max-width:640px){
+ #pages .invite-page .content{
+  width:calc(100% - 34px);padding:88px 12px 58px;
+ }
+ #pages .invite-page .names{font-size:clamp(32px,8.5vw,46px)}
+ #pages .invite-page .title{font-size:clamp(34px,8.5vw,46px)}
+ #pages .invite-page .couple-line{font-size:12.5px;line-height:1.4}
+ #pages .invite-page .invite-copy{font-size:13px}
+}
+
 </style>
 </head>
 <body>
