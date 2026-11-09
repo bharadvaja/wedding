@@ -218,6 +218,21 @@ section.invite-page{
 .art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .art img.couple-art{object-fit:cover;object-position:center 34%;background:#f7ead8}
 
+
+/* Generated watercolor ceremony panels hosted in this repository */
+.scene-art{
+ width:100%;height:100%;min-height:250px;
+ background-image:url('../assets/ceremony-scenes.webp');
+ background-repeat:no-repeat;background-size:300% 200%;
+ background-color:#f6ead6;
+}
+.scene-art.haldi{background-position:50% 0%}
+.scene-art.mehendi{background-position:100% 0%}
+.scene-art.ankur{background-position:0% 100%}
+.scene-art.wedding{background-position:50% 100%}
+.scene-art.vratham{background-position:100% 100%}
+@media(max-width:540px){.scene-art{min-height:245px}}
+
 </style>
 </head>
 <body>
@@ -244,11 +259,11 @@ section.invite-page{
 <main id="pages"></main>
 <script>
 function scenery(kind){
- const file = kind === 'ankur' ? 'ankur' : kind;
  if(kind === 'welcome'){
   return '<img class="couple-art" src="../assets/couple-portrait.svg" alt="Watercolor illustration of a South Indian bride and groom">';
  }
- return '<img src="../assets/scenes/' + file + '.svg" alt="' + file + ' watercolor ceremony artwork">';
+ const names = {haldi:'Haldi ceremony', mehendi:'Mehendi ceremony', ankur:'Ankurarpana ceremony', wedding:'Wedding mandapam', vratham:'Vratham ceremony'};
+ return '<div class="scene-art ' + kind + '" role="img" aria-label="' + (names[kind] || 'Wedding ceremony') + ' watercolor artwork"></div>';
 }
 function frameArt(kind){return `<div class="art">${scenery(kind)}</div>`}
 function frameCorners(){return `<div class="hanging"><svg viewBox="0 0 500 150"><use href="#hanging-flowers"/></svg></div>
