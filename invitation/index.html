@@ -5,234 +5,78 @@
 <meta name="theme-color" content="#f8f1e2">
 <title>Lalitha & Bharadvaja | Wedding Invitation</title>
 <style>
-:root{--ink:#4d4638;--green:#566b4c;--rose:#a94f63;--gold:#b69a62;--paper:#fbf5e8}
+:root{--ink:#4d493d;--green:#405d46;--rose:#a64f64;--gold:#b6975c;--paper:#fbf5e8}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-snap-type:y proximity}
-body{margin:0;background:#eee7d8;color:var(--ink);font-family:Georgia,'Times New Roman',serif}
-section.invite-page{min-height:100svh;scroll-snap-align:start;display:grid;place-items:center;padding:20px 12px;position:relative;overflow:hidden;background:#f8f1e2}
-.invite-page:nth-child(even){background:#f3ead9}
-.sheet{position:relative;width:min(100%,510px);min-height:min(920px,calc(100svh - 32px));height:auto;overflow:hidden;isolation:isolate;border:1px solid #c7b58e;box-shadow:0 18px 55px #5b4b3026;background:linear-gradient(180deg,#fbf7eb 0%,#f7f0df 48%,#f8f1e4 100%)}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:#eee5d5}
+section.invite-page{min-height:100svh;scroll-snap-align:start;display:grid;place-items:center;padding:16px;background:radial-gradient(ellipse at 10% 12%,#ead4c7 0,transparent 38%),radial-gradient(ellipse at 90% 88%,#d4dfc6 0,transparent 40%),#f1e8d8;position:relative;overflow:hidden}
+.invite-page:nth-child(2){background:radial-gradient(ellipse at 12% 12%,#f5d994 0,transparent 40%),#f7edcf}
+.invite-page:nth-child(3){background:radial-gradient(ellipse at 88% 12%,#e8c5ce 0,transparent 42%),#f5e8e4}
+.invite-page:nth-child(4){background:radial-gradient(ellipse at 12% 88%,#d2dfc4 0,transparent 42%),#f4ecd9}
+.invite-page:nth-child(5){background:radial-gradient(ellipse at 88% 10%,#e6c6b7 0,transparent 42%),#f5e7dc}
+.invite-page:nth-child(6){background:radial-gradient(ellipse at 12% 12%,#e9d8ad 0,transparent 42%),#f5efdf}
+.sheet{position:relative;width:min(100%,980px);min-height:calc(100svh - 32px);display:flex;flex-direction:column;align-items:stretch;overflow:hidden;isolation:isolate;border:1px solid #c4a56d;box-shadow:0 18px 55px #5b4b3026;background:linear-gradient(145deg,#fffdf6 0%,#fbf3e3 55%,#f4ead8 100%)}
 .sheet:before{content:"";position:absolute;inset:9px;border:1px solid #d7c69f;z-index:4;pointer-events:none}
-.sheet:after{content:"";position:absolute;inset:15px;border:1px solid #e7dcc2;z-index:4;pointer-events:none}
-.hanging{position:absolute;top:-5px;left:0;width:100%;height:155px;z-index:3;pointer-events:none}
+.sheet:after{content:"";position:absolute;inset:15px;border:1px solid #eadfc8;z-index:4;pointer-events:none}
+.hanging{position:absolute;top:0;left:0;width:100%;height:95px;z-index:3;pointer-events:none;opacity:.85}
 .hanging svg{width:100%;height:100%}
-.corner{position:absolute;width:150px;height:185px;z-index:3;pointer-events:none}
+.corner{position:absolute;width:clamp(90px,12vw,145px);height:clamp(110px,15vw,175px);z-index:3;pointer-events:none;opacity:.92}
 .corner svg{width:100%;height:100%}
 .corner.tl{top:0;left:0}.corner.tr{top:0;right:0;transform:scaleX(-1)}
 .corner.bl{bottom:0;left:0;transform:scaleY(-1)}.corner.br{bottom:0;right:0;transform:scale(-1)}
-.content{position:relative;z-index:2;text-align:center;padding:125px 32px 26px;min-height:880px;display:flex;flex-direction:column;align-items:center}
-.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#6f795d;margin:7px 0 15px}
-.names{font-size:clamp(39px,10vw,58px);font-weight:400;line-height:1.04;color:#a64b62;font-style:italic;margin:4px 0 13px}
-.and{font-size:23px;color:#b69a62;font-style:italic;display:block;margin:5px}
-.couple-line{font-size:14px;line-height:1.55;color:#5b654f;margin:4px 0}
+.content{position:relative;z-index:2;flex:1;min-height:calc(100svh - 32px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:105px clamp(28px,6vw,76px) 14px}
+.eyebrow{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#718064;margin:6px 0 12px}
+.names{font-size:clamp(36px,5.5vw,62px);font-weight:400;line-height:1.04;color:var(--rose);font-style:italic;margin:2px 0 5px}
+.and{font-size:22px;color:var(--gold);font-style:italic;display:block;margin:2px}
+.couple-line{font-size:clamp(13px,1.55vw,16px);line-height:1.5;color:#59634f;margin:3px 0}
 .couple-line strong{font-weight:600;color:#465a43}
-.invite-copy{font-size:14px;line-height:1.55;max-width:360px;color:#5b5a4b;margin:15px auto}
-.title{font-size:clamp(39px,9vw,52px);font-style:italic;font-weight:400;color:#a64b62;line-height:1.05;margin:8px 0 12px}
-.date{font-size:15px;letter-spacing:.03em;color:#4f684e;font-weight:bold;margin:10px 0 5px}
-.time{font-size:13px;color:#5c5a4d;margin:5px 0}
-.small-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#9b8558;margin:19px 0 5px}
-.venue{font-size:14px;line-height:1.5;color:#4d5945;margin:3px auto;max-width:330px}
+.invite-copy{font-size:15px;line-height:1.55;max-width:420px;color:#625d50;margin:12px auto}
+.title{font-size:clamp(38px,5vw,58px);font-style:italic;font-weight:400;color:var(--rose);line-height:1.05;margin:7px 0 9px}
+.date{font-size:clamp(14px,1.8vw,17px);letter-spacing:.025em;color:#42664a;font-weight:bold;margin:8px 0 4px}
+.time{font-size:14px;color:#625d50;margin:4px 0}
+.small-label{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#9b8050;margin:12px 0 4px}
+.venue{font-size:15px;line-height:1.5;color:#4d5945;margin:3px auto;max-width:360px}
 .placeholder{font-style:italic;color:#8a8069;border-bottom:1px dashed #b69a62}
-.lunch{font-style:italic;color:#a64b62;font-size:14px;margin:12px 0}
-.divider{color:#b69a62;letter-spacing:.35em;margin:9px 0;font-size:15px}
-.art{width:calc(100% + 64px);height:340px;margin:20px -32px 0;position:relative;overflow:hidden}
-.art svg{width:100%;height:100%;display:block}
-.closing{font-size:14px;line-height:1.6;color:#647157;font-style:italic;margin:18px 0 8px}
-.scroll-note{position:absolute;bottom:18px;left:0;right:0;z-index:6;text-align:center;font-size:9px;letter-spacing:.24em;color:#9b8558;text-transform:uppercase}
-.scroll-note:after{content:"⌄";display:block;font-size:21px;line-height:1.1;animation:float 1.7s ease-in-out infinite}
-@keyframes float{50%{transform:translateY(5px)}}
-.dots{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:9px}
+.lunch{font-style:italic;color:var(--rose);font-size:14px;margin:8px 0}
+.divider{color:var(--gold);letter-spacing:.35em;margin:6px 0;font-size:15px}
+.art{width:min(100% - 100px,700px);height:clamp(180px,24vh,245px);margin:12px auto 18px;position:relative;overflow:hidden;flex:0 0 auto;border:1px solid #ddc99f;border-radius:4px;background:#f5ead7;box-shadow:0 8px 24px #6e57301a}
+.art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:linear-gradient(135deg,#f8eddd,#f1e5d3)}
+.art img.couple-art{object-fit:contain;object-position:center;background:transparent;padding:3px}
+.scene-art{width:100%;height:100%;background-image:url('../assets/ceremony-scenes.webp');background-repeat:no-repeat;background-size:300% 200%;background-color:#f6ead6}
+.scene-art.haldi{background-position:50% 0%}.scene-art.mehendi{background-position:100% 0%}.scene-art.ankur{background-position:0% 100%}.scene-art.wedding{background-position:50% 100%}.scene-art.vratham{background-position:100% 100%}
+.closing{font-size:14px;line-height:1.6;color:#647157;font-style:italic;margin:10px 0 5px}
+.scroll-note{position:absolute;bottom:12px;left:0;right:0;z-index:6;text-align:center;font-size:9px;letter-spacing:.24em;color:#9b8558;text-transform:uppercase}
+.scroll-note:after{content:"⌄";display:block;font-size:19px;line-height:1.1}
+.dots{position:fixed;right:12px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:10px}
 .dots a{width:7px;height:7px;border-radius:50%;background:#c3b28d;border:1px solid #fff;text-decoration:none}
 .dots a.active{background:#a64b62;transform:scale(1.4)}
 .petal-layer{position:fixed;inset:0;z-index:30;pointer-events:none;overflow:hidden}
 .petal{position:absolute;top:-25px;animation:fall var(--dur) linear forwards;opacity:0;filter:drop-shadow(0 2px 2px #80613a22)}
-@keyframes fall{0%{transform:translate(var(--x),-30px) rotate(0);opacity:0}12%{opacity:.9}100%{transform:translate(calc(var(--x) + var(--drift)),110vh) rotate(var(--spin));opacity:0}}
-@media(max-width:540px){
- section.invite-page{padding:7px 5px}
- .sheet{min-height:calc(100svh - 14px)}
- .content{min-height:calc(100svh - 16px);padding:115px 23px 28px}
- .hanging{height:125px}
- .corner{width:112px;height:140px}
- .art{height:clamp(245px,34vh,310px);width:calc(100% + 46px);margin-left:-23px;margin-right:-23px}
- .dots{right:5px;gap:8px}
- .invite-page .scroll-note{bottom:9px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.petal{display:none}.scroll-note:after{animation:none}}
-
-/* Richer ceremony-specific colour washes and paper finish */
-body{
- background:
-  radial-gradient(ellipse at 12% 10%,#e8c9c5 0,transparent 32%),
-  radial-gradient(ellipse at 88% 88%,#c9d8b6 0,transparent 35%),
-  #e9dfcc;
-}
-section.invite-page{
- background:
-  radial-gradient(ellipse at 8% 8%,rgba(216,164,154,.38),transparent 38%),
-  radial-gradient(ellipse at 92% 90%,rgba(143,170,119,.32),transparent 42%),
-  linear-gradient(145deg,#f8eddd,#f1e6d4 58%,#e9eadb);
-}
-.invite-page:nth-child(2){
- background:
-  radial-gradient(ellipse at 14% 18%,rgba(246,194,92,.48),transparent 38%),
-  radial-gradient(ellipse at 88% 82%,rgba(188,157,77,.34),transparent 42%),
-  linear-gradient(145deg,#fff0c9,#f7e5b4 55%,#e9e5c8);
-}
-.invite-page:nth-child(3){
- background:
-  radial-gradient(ellipse at 85% 14%,rgba(225,157,170,.42),transparent 38%),
-  radial-gradient(ellipse at 10% 86%,rgba(126,158,105,.36),transparent 42%),
-  linear-gradient(145deg,#f9e8e2,#f1e1d8 55%,#e5ead8);
-}
-.invite-page:nth-child(4){
- background:
-  radial-gradient(ellipse at 12% 12%,rgba(197,166,104,.4),transparent 38%),
-  radial-gradient(ellipse at 88% 88%,rgba(132,163,119,.38),transparent 42%),
-  linear-gradient(145deg,#f5ecd6,#efe4c9 55%,#e3eadb);
-}
-.invite-page:nth-child(5){
- background:
-  radial-gradient(ellipse at 84% 12%,rgba(216,153,145,.46),transparent 38%),
-  radial-gradient(ellipse at 10% 88%,rgba(129,164,145,.38),transparent 42%),
-  linear-gradient(145deg,#f8e4d9,#f1dfd3 55%,#e1e9df);
-}
-.invite-page:nth-child(6){
- background:
-  radial-gradient(ellipse at 12% 10%,rgba(218,190,128,.42),transparent 38%),
-  radial-gradient(ellipse at 88% 88%,rgba(143,167,120,.34),transparent 42%),
-  linear-gradient(145deg,#f8efd9,#eee7d2 55%,#e4eadc);
-}
-.sheet{
- background:
-  radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.95),transparent 48%),
-  radial-gradient(ellipse at 0% 100%,rgba(229,207,157,.24),transparent 45%),
-  linear-gradient(160deg,#fffdf5 0%,#fbf3e2 52%,#f4ecd9 100%);
-}
-.sheet:before{border-color:#c5a76e}
-.sheet:after{border-color:#ead9b4}
-.eyebrow{color:#637653}
-.date{color:#42664a}
-.small-label{color:#a1844d}
-.art{
- border-top:1px solid rgba(182,154,98,.45);
- border-bottom:1px solid rgba(182,154,98,.35);
- box-shadow:0 -8px 20px rgba(255,255,255,.18),0 8px 20px rgba(94,91,63,.08);
-}
-
-
-/* Full-bleed editorial layout with richer, ceremony-specific colour */
-body{
- background:
-  radial-gradient(ellipse at 12% 12%,#e8c9bd 0,transparent 35%),
-  radial-gradient(ellipse at 88% 86%,#c7d4b5 0,transparent 38%),
-  #e9dfcc;
-}
-section.invite-page{
- min-height:100svh;padding:10px;
- background:
-  radial-gradient(ellipse at 7% 8%,rgba(213,157,143,.42),transparent 40%),
-  radial-gradient(ellipse at 93% 91%,rgba(139,166,119,.38),transparent 43%),
-  linear-gradient(135deg,#f7ead8 0%,#f2e5d2 54%,#e5eadb 100%);
-}
-.invite-page:nth-child(2){
- background:
-  radial-gradient(ellipse at 10% 12%,rgba(244,191,91,.55),transparent 42%),
-  radial-gradient(ellipse at 90% 88%,rgba(190,159,78,.38),transparent 44%),
-  linear-gradient(135deg,#fff0c6,#f5dfa7 58%,#e6e7c8);
-}
-.invite-page:nth-child(3){
- background:
-  radial-gradient(ellipse at 88% 10%,rgba(223,151,168,.52),transparent 42%),
-  radial-gradient(ellipse at 8% 90%,rgba(126,159,107,.43),transparent 45%),
-  linear-gradient(135deg,#f9e5e1,#f0d9d6 56%,#e0e9d7);
-}
-.invite-page:nth-child(4){
- background:
-  radial-gradient(ellipse at 9% 10%,rgba(203,168,104,.48),transparent 42%),
-  radial-gradient(ellipse at 92% 88%,rgba(125,158,111,.42),transparent 44%),
-  linear-gradient(135deg,#f7ecd5,#eddfc0 56%,#e0e8d6);
-}
-.invite-page:nth-child(5){
- background:
-  radial-gradient(ellipse at 88% 9%,rgba(218,145,139,.52),transparent 42%),
-  radial-gradient(ellipse at 8% 92%,rgba(119,159,144,.42),transparent 45%),
-  linear-gradient(135deg,#f8e1d5,#efd8d0 56%,#dce8df);
-}
-.invite-page:nth-child(6){
- background:
-  radial-gradient(ellipse at 10% 9%,rgba(219,185,116,.48),transparent 42%),
-  radial-gradient(ellipse at 90% 90%,rgba(135,163,113,.4),transparent 45%),
-  linear-gradient(135deg,#f8eed8,#eee2c7 56%,#e1e9d9);
-}
-.sheet{
- width:min(100%,1180px);
- min-height:calc(100svh - 20px);
- background:
-  radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.97),transparent 48%),
-  radial-gradient(ellipse at 0% 100%,rgba(229,205,151,.3),transparent 45%),
-  linear-gradient(160deg,#fffdf5 0%,#fbf1dc 52%,#f1e8d5 100%);
- border-color:#bda16c;
- box-shadow:0 22px 70px rgba(75,57,34,.22),inset 0 0 0 5px rgba(255,255,255,.42);
-}
-.sheet:before{border-color:#c4a36a;inset:11px}
-.sheet:after{border-color:#e4d1a8;inset:18px}
-.content{
- min-height:calc(100svh - 20px);
- padding:132px clamp(28px,7vw,100px) 0;
-}
-.names{font-size:clamp(44px,6vw,76px);text-shadow:0 1px 0 #fff8}
-.title{font-size:clamp(43px,5.8vw,70px);text-shadow:0 1px 0 #fff8}
-.eyebrow{color:#596e4e}
-.date{color:#365f42}
-.small-label{color:#987744}
-.art{
- width:calc(100% + clamp(56px,14vw,200px));
- height:clamp(300px,39vh,470px);
- margin:24px calc(clamp(28px,7vw,100px) * -1) 0;
- border-top:1px solid rgba(182,154,98,.58);
- border-bottom:1px solid rgba(182,154,98,.42);
- box-shadow:0 -12px 25px rgba(255,255,255,.24),0 10px 28px rgba(79,79,54,.12);
-}
-.art svg{filter:saturate(1.08) contrast(1.025)}
-.corner{width:clamp(150px,20vw,230px);height:clamp(180px,24vw,270px)}
-.hanging{height:clamp(145px,18vw,205px)}
-@media(min-width:760px){
- section.invite-page{padding:10px}
- .content{padding-top:clamp(120px,14vh,170px)}
- .art{height:clamp(330px,40vh,480px)}
-}
-@media(max-width:540px){
+@keyframes fall{0%{transform:translate(var(--x),-30px) rotate(0);opacity:0}12%{opacity:.85}100%{transform:translate(calc(var(--x) + var(--drift)),110vh) rotate(var(--spin));opacity:0}}
+@media(max-width:640px){
  section.invite-page{padding:0}
- .sheet{width:100%;min-height:100svh}
- .content{min-height:100svh;padding:112px 23px 0}
- .names{font-size:clamp(39px,10vw,58px)}
- .title{font-size:clamp(39px,9vw,52px)}
- .art{width:calc(100% + 46px);height:clamp(250px,34vh,330px);margin:20px -23px 0}
- .corner{width:112px;height:140px}
- .hanging{height:125px}
+ .sheet{width:100%;min-height:100svh;border-left:0;border-right:0}
+ .content{min-height:100svh;padding:94px 22px 8px;justify-content:center}
+ .eyebrow{font-size:9px;margin:5px 0 9px}
+ .names{font-size:clamp(34px,9vw,48px)}
+ .couple-line{font-size:13px;line-height:1.42}
+ .invite-copy{font-size:13px;margin:8px auto}
+ .date{font-size:14px}
+ .small-label{margin:9px 0 3px}
+ .venue{font-size:14px}
+ .art{width:calc(100% - 64px);height:clamp(155px,21vh,205px);margin:9px auto 15px}
+ .corner{width:85px;height:105px}
+ .hanging{height:72px}
+ .scroll-note{bottom:8px;font-size:8px}
+ .dots{right:5px;gap:8px}
 }
-
-
-/* Load the dedicated GitHub-hosted watercolor artwork for each ceremony */
-.art{background:#f4ead8;overflow:hidden}
-.art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.art img.couple-art{object-fit:cover;object-position:center 34%;background:#f7ead8}
-
-
-/* Generated watercolor ceremony panels hosted in this repository */
-.scene-art{
- width:100%;height:100%;min-height:250px;
- background-image:url('../assets/ceremony-scenes.webp');
- background-repeat:no-repeat;background-size:300% 200%;
- background-color:#f6ead6;
+@media(max-height:760px) and (min-width:641px){
+ .content{padding-top:75px}
+ .art{height:150px;margin:7px auto 12px}
+ .couple-line{line-height:1.35}
+ .invite-copy{margin:7px auto}
 }
-.scene-art.haldi{background-position:50% 0%}
-.scene-art.mehendi{background-position:100% 0%}
-.scene-art.ankur{background-position:0% 100%}
-.scene-art.wedding{background-position:50% 100%}
-.scene-art.vratham{background-position:100% 100%}
-@media(max-width:540px){.scene-art{min-height:245px}}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.petal{display:none}}
 </style>
 </head>
 <body>
