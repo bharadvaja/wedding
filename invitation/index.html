@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f1e2">
+<title>Lalitha & Bharadvaja | Wedding Invitation</title>
+<style>
+:root{--ink:#4d4638;--green:#566b4c;--rose:#a94f63;--gold:#b69a62;--paper:#fbf5e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{margin:0;background:#eee7d8;color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+section.invite-page{min-height:100svh;scroll-snap-align:start;display:grid;place-items:center;padding:20px 12px;position:relative;overflow:hidden;background:#f8f1e2}
+.invite-page:nth-child(even){background:#f3ead9}
+.sheet{position:relative;width:min(100%,510px);min-height:min(920px,calc(100svh - 32px));height:auto;overflow:hidden;isolation:isolate;border:1px solid #c7b58e;box-shadow:0 18px 55px #5b4b3026;background:linear-gradient(180deg,#fbf7eb 0%,#f7f0df 48%,#f8f1e4 100%)}
+.sheet:before{content:"";position:absolute;inset:9px;border:1px solid #d7c69f;z-index:4;pointer-events:none}
+.sheet:after{content:"";position:absolute;inset:15px;border:1px solid #e7dcc2;z-index:4;pointer-events:none}
+.hanging{position:absolute;top:-5px;left:0;width:100%;height:155px;z-index:3;pointer-events:none}
+.hanging svg{width:100%;height:100%}
+.corner{position:absolute;width:150px;height:185px;z-index:3;pointer-events:none}
+.corner svg{width:100%;height:100%}
+.corner.tl{top:0;left:0}.corner.tr{top:0;right:0;transform:scaleX(-1)}
+.corner.bl{bottom:0;left:0;transform:scaleY(-1)}.corner.br{bottom:0;right:0;transform:scale(-1)}
+.content{position:relative;z-index:2;text-align:center;padding:125px 32px 26px;min-height:880px;display:flex;flex-direction:column;align-items:center}
+.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#6f795d;margin:7px 0 15px}
+.names{font-size:clamp(39px,10vw,58px);font-weight:400;line-height:1.04;color:#a64b62;font-style:italic;margin:4px 0 13px}
+.and{font-size:23px;color:#b69a62;font-style:italic;display:block;margin:5px}
+.couple-line{font-size:14px;line-height:1.55;color:#5b654f;margin:4px 0}
+.couple-line strong{font-weight:600;color:#465a43}
+.invite-copy{font-size:14px;line-height:1.55;max-width:360px;color:#5b5a4b;margin:15px auto}
+.title{font-size:clamp(39px,9vw,52px);font-style:italic;font-weight:400;color:#a64b62;line-height:1.05;margin:8px 0 12px}
+.date{font-size:15px;letter-spacing:.03em;color:#4f684e;font-weight:bold;margin:10px 0 5px}
+.time{font-size:13px;color:#5c5a4d;margin:5px 0}
+.small-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#9b8558;margin:19px 0 5px}
+.venue{font-size:14px;line-height:1.5;color:#4d5945;margin:3px auto;max-width:330px}
+.placeholder{font-style:italic;color:#8a8069;border-bottom:1px dashed #b69a62}
+.lunch{font-style:italic;color:#a64b62;font-size:14px;margin:12px 0}
+.divider{color:#b69a62;letter-spacing:.35em;margin:9px 0;font-size:15px}
+.art{width:calc(100% + 64px);height:340px;margin:20px -32px 0;position:relative;overflow:hidden}
+.art svg{width:100%;height:100%;display:block}
+.closing{font-size:14px;line-height:1.6;color:#647157;font-style:italic;margin:18px 0 8px}
+.scroll-note{position:absolute;bottom:18px;left:0;right:0;z-index:6;text-align:center;font-size:9px;letter-spacing:.24em;color:#9b8558;text-transform:uppercase}
+.scroll-note:after{content:"⌄";display:block;font-size:21px;line-height:1.1;animation:float 1.7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(5px)}}
+.dots{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:9px}
+.dots a{width:7px;height:7px;border-radius:50%;background:#c3b28d;border:1px solid #fff;text-decoration:none}
+.dots a.active{background:#a64b62;transform:scale(1.4)}
+.petal-layer{position:fixed;inset:0;z-index:30;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-25px;animation:fall var(--dur) linear forwards;opacity:0;filter:drop-shadow(0 2px 2px #80613a22)}
+@keyframes fall{0%{transform:translate(var(--x),-30px) rotate(0);opacity:0}12%{opacity:.9}100%{transform:translate(calc(var(--x) + var(--drift)),110vh) rotate(var(--spin));opacity:0}}
+@media(max-width:540px){
+ section.invite-page{padding:7px 5px}
+ .sheet{min-height:calc(100svh - 14px)}
+ .content{min-height:calc(100svh - 16px);padding:115px 23px 28px}
+ .hanging{height:125px}
+ .corner{width:112px;height:140px}
+ .art{height:clamp(245px,34vh,310px);width:calc(100% + 46px);margin-left:-23px;margin-right:-23px}
+ .dots{right:5px;gap:8px}
+ .invite-page .scroll-note{bottom:9px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.petal{display:none}.scroll-note:after{animation:none}}
+</style>
+</head>
+<body>
+<div class="petal-layer" id="petals"></div>
+<nav class="dots" aria-label="Invitation sections">
+<a href="#welcome" aria-label="Welcome"></a><a href="#haldi" aria-label="Haldi"></a><a href="#mehendi" aria-label="Mehendi"></a><a href="#ankurarpana" aria-label="Ankurarpana"></a><a href="#wedding" aria-label="Wedding"></a><a href="#vratham" aria-label="Vratham"></a>
+</nav>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="floral-corner" viewBox="0 0 180 200">
+ <g fill="none" stroke="#71865b" stroke-width="2.2"><path d="M3 0Q45 48 105 165"/><path d="M0 12Q65 37 166 75"/><path d="M0 35Q42 95 30 190"/></g>
+ <g fill="#8ba16c" stroke="#6c8758" stroke-width="1"><path d="M31 38Q-3 4 40 0Q69 15 31 38Z"/><path d="M54 55Q70 8 113 13Q104 50 54 55Z"/><path d="M75 87Q19 77 25 44Q66 43 75 87Z"/><path d="M99 121Q105 69 150 67Q143 108 99 121Z"/><path d="M34 145Q-3 116 1 84Q39 96 34 145Z"/></g>
+ <g fill="#d8899b" stroke="#c66e82"><path d="M90 64q-17-23 0-37q18 14 0 37Z"/><path d="M90 64q-25 0-25-18q21-8 25 18Z"/><path d="M90 64q25 0 25-18q-21-8-25 18Z"/><circle cx="90" cy="57" r="6" fill="#e7c477" stroke="none"/></g>
+ <g fill="#e7c77b"><circle cx="47" cy="109" r="4"/><circle cx="57" cy="119" r="3"/><circle cx="68" cy="127" r="3"/></g>
+</symbol>
+<symbol id="hanging-flowers" viewBox="0 0 500 150">
+ <g fill="none" stroke="#87966a" stroke-width="1.5"><path d="M0 0Q100 35 190 4T390 12T500 0"/><path d="M38 2q-5 30 4 55M95 13q-8 28 1 48M160 13q-6 27 2 52M282 10q-6 31 2 57M365 13q-8 26 0 49M450 5q-7 29 2 55"/></g>
+ <g fill="#79975e"><path d="M36 29q-24-20-27-2q13 15 27 2M42 43q22-22 28-7q-13 17-28 7M94 35q-20-17-27-2q12 14 27 2M98 48q19-20 26-5q-12 16-26 5M159 36q-21-18-28-2q14 16 28 2M165 49q20-19 27-4q-12 16-27 4M281 35q-20-18-28-2q13 16 28 2M286 48q20-18 26-3q-12 15-26 3M364 33q-20-17-27-2q13 15 27 2M370 47q20-18 27-3q-12 15-27 3M449 28q-20-17-26-2q12 14 26 2M454 43q20-18 27-3q-13 15-27 3"/></g>
+ <g fill="#d78b9a"><path d="M40 62q-13-14 0-24q13 10 0 24Z"/><path d="M95 65q-13-14 0-24q13 10 0 24Z"/><path d="M162 67q-13-14 0-24q13 10 0 24Z"/><path d="M284 72q-13-14 0-24q13 10 0 24Z"/><path d="M367 64q-13-14 0-24q13 10 0 24Z"/><path d="M451 63q-13-14 0-24q13 10 0 24Z"/></g>
+</symbol>
+</svg>
+
+<!-- Scenic illustration: pastel sky, distant hills, water, flowering garden and a seated couple -->
+<main id="pages"></main>
+<script>
+function scenery(kind){
+ const colors={
+  welcome:['#d9e8df','#f4e7c9','#91aa91','#718d77'],
+  haldi:['#f4e5b5','#f8d982','#a5b66f','#7d9a5b'],
+  mehendi:['#e6e8d9','#f4d7d0','#9bad83','#718a68'],
+  ankur:['#dce9df','#f2dfbd','#a8b68c','#789477'],
+  wedding:['#dce8e7','#f5d6c0','#9eae91','#698b78'],
+  vratham:['#e8e8d5','#f1dfb9','#a6b68a','#748d70']
+ }[kind];
+ const isNight=kind==='wedding';
+ return `<svg viewBox="0 0 500 340" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Watercolor garden and hills illustration">
+ <defs><linearGradient id="sky-${kind}" x2="0" y2="1"><stop stop-color="${colors[0]}"/><stop offset="1" stop-color="${colors[1]}"/></linearGradient><linearGradient id="lake-${kind}" x2="0" y2="1"><stop stop-color="#b4c9bd"/><stop offset="1" stop-color="#e0d8bb"/></linearGradient></defs>
+ <rect width="500" height="340" fill="url(#sky-${kind})"/>
+ <circle cx="375" cy="75" r="35" fill="#f9e3b3" opacity=".72"/>
+ <path d="M0 196Q75 135 144 183T280 163T500 177V340H0Z" fill="${colors[2]}" opacity=".65"/>
+ <path d="M0 220Q85 167 167 210T320 195T500 211V340H0Z" fill="${colors[3]}" opacity=".72"/>
+ <path d="M0 250Q110 216 215 244T500 235V340H0Z" fill="url(#lake-${kind})"/>
+ <path d="M0 275Q110 255 220 275T500 265" stroke="#fff8e8" stroke-width="2" fill="none" opacity=".7"/>
+ <path d="M0 297Q120 280 240 299T500 290" stroke="#fff8e8" stroke-width="1.5" fill="none" opacity=".6"/>
+ <!-- flowering trees -->
+ <g stroke="#6e815b" stroke-width="5" fill="none"><path d="M25 270Q40 190 30 105"/><path d="M470 275Q455 180 475 90"/></g>
+ <g fill="#7d9c70" opacity=".9"><circle cx="25" cy="100" r="49"/><circle cx="65" cy="119" r="39"/><circle cx="0" cy="146" r="42"/><circle cx="466" cy="93" r="53"/><circle cx="430" cy="123" r="40"/><circle cx="500" cy="145" r="43"/></g>
+ <g fill="#e9a5ae"><circle cx="20" cy="89" r="7"/><circle cx="54" cy="102" r="6"/><circle cx="3" cy="139" r="6"/><circle cx="452" cy="82" r="7"/><circle cx="482" cy="118" r="6"/><circle cx="425" cy="131" r="6"/></g>
+ <!-- little garden flowers -->
+ <g fill="#f1d8a0"><circle cx="80" cy="300" r="5"/><circle cx="96" cy="287" r="4"/><circle cx="405" cy="300" r="5"/><circle cx="424" cy="286" r="4"/></g>
+ <!-- couple, in understated storybook silhouette -->
+ <g transform="translate(250 213)">
+  <ellipse cx="-16" cy="106" rx="52" ry="8" fill="#526b5a" opacity=".2"/>
+  <path d="M-48 102Q-65 49-39 16Q-14 4 0 43Q12 78 18 103Z" fill="#a94f68"/>
+  <path d="M-40 21Q-52-2-29-17Q-5-21 2 5L-6 32Z" fill="#473d34"/>
+  <circle cx="-24" cy="2" r="16" fill="#d5a27e"/>
+  <path d="M-9 40Q10 6 27 16Q49 28 52 103H5Z" fill="#d6a64e"/>
+  <circle cx="21" cy="1" r="16" fill="#c68d70"/>
+  <path d="M7-9Q14-31 38-17Q52-3 39 8Q35-12 7-9Z" fill="#3c3933"/>
+  <path d="M-10 31Q4 22 18 36" stroke="#f1d9b5" stroke-width="4" fill="none"/>
+  <path d="M-7 45Q-1 60 17 62" stroke="#d5a27e" stroke-width="8" stroke-linecap="round" fill="none"/>
+ </g>
+ <!-- watercolor paper grain -->
+ <rect width="500" height="340" fill="#fff5dc" opacity=".08"/>
+ </svg>`;
+}
+function frameArt(kind){return `<div class="art">${scenery(kind)}</div>`}
+function frameCorners(){return `<div class="hanging"><svg viewBox="0 0 500 150"><use href="#hanging-flowers"/></svg></div>
+ <div class="corner tl"><svg viewBox="0 0 180 200"><use href="#floral-corner"/></svg></div><div class="corner tr"><svg viewBox="0 0 180 200"><use href="#floral-corner"/></svg></div><div class="corner bl"><svg viewBox="0 0 180 200"><use href="#floral-corner"/></svg></div><div class="corner br"><svg viewBox="0 0 180 200"><use href="#floral-corner"/></svg></div>`}
+function page(id,inner,kind,final=false){return `<section class="invite-page" id="${id}"><div class="sheet">${frameCorners()}<div class="content">${inner}${frameArt(kind)}</div></div>${final?'':'<div class="scroll-note">Scroll to continue</div>'}</section>`}
+const sections=[
+page('welcome',`
+ <div class="eyebrow">Together with our families</div>
+ <div class="names">Lalitha</div><span class="and">&amp;</span><div class="names">Bharadvaja</div>
+ <div class="divider">✦ ❀ ✦</div>
+ <div class="eyebrow">Bride</div><p class="couple-line"><strong>Lalitha Kannekanti</strong><br>D/o<br>Mr. Kannekanti Raja Shekhar Rao &amp;<br>Mrs. Kannekanti Uma Sravani</p>
+ <span class="and">❧ And ❧</span>
+ <div class="eyebrow">Groom</div><p class="couple-line"><strong>Bharadvaja Gundepudi</strong><br>S/o<br>Mr. Gundepudi Laxmi Narasimha Shastri (late) &amp;<br>Mrs. Gundepudi Padma</p>
+ <p class="invite-copy">Cordially invite you to join us and bless the occasion of our wedding.</p>
+ <div class="divider">✦ ❀ ✦</div><p class="date">Saturday · 21st November 2026 · 9:51 PM</p>
+ <div class="small-label">Wedding venue</div><p class="venue">Achuri Gardens, MLG Road,<br>Nalgonda</p>
+`,'welcome'),
+page('haldi',`
+ <div class="eyebrow">A morning of sunshine &amp; blessings</div><h2 class="title">Haldi / Pelllikuturu</h2>
+ <div class="divider">✦ ❀ ✦</div><p class="date">19th November 2026</p><p class="time">9:00 AM onwards</p>
+ <div class="small-label">Venue</div><p class="venue"><span class="placeholder">[Home – address to be added]</span></p>
+ <p class="lunch">Lunch follows</p><p class="closing">Let the celebrations begin with turmeric, flowers and happy hearts.</p>
+`,'haldi'),
+page('mehendi',`
+ <div class="eyebrow">A garden of colour &amp; joy</div><h2 class="title">Mehendi</h2>
+ <div class="divider">✦ ❀ ✦</div><p class="date">Date &amp; time to be announced</p>
+ <div class="small-label">Venue</div><p class="venue"><span class="placeholder">[Venue details to be added]</span></p>
+ <p class="closing">Beautiful patterns, joyful moments and memories to cherish.</p>
+`,'mehendi'),
+page('ankurarpana',`
+ <div class="eyebrow">A sacred beginning</div><h2 class="title">Ankurarpana</h2>
+ <div class="divider">✦ ❀ ✦</div><p class="date">20th November 2026</p><p class="time">3:00 PM onwards</p>
+ <div class="small-label">Venue</div><p class="venue"><span class="placeholder">[Home – address to be added]</span></p>
+ <p class="lunch">Lunch follows</p><p class="closing">May this auspicious beginning be filled with blessings.</p>
+`,'ankur'),
+page('wedding',`
+ <div class="eyebrow">The auspicious union</div><h2 class="title">Wedding</h2>
+ <div class="divider">✦ ❀ ✦</div><p class="date">Saturday · 21st November 2026</p><p class="time">Muhurtham · 9:51 PM</p>
+ <div class="small-label">Venue</div><p class="venue">Achuri Gardens,<br>MLG Road, Nalgonda</p>
+ <p class="closing">Your presence and blessings will make our day complete.</p>
+`,'wedding'),
+page('vratham',`
+ <div class="eyebrow">An auspicious family occasion</div><h2 class="title">Vratham</h2>
+ <div class="divider">✦ ❀ ✦</div><p class="date">24th November 2026</p><p class="time">Time to be announced</p>
+ <div class="small-label">Venue</div><p class="venue"><span class="placeholder">[Home – address to be added]</span></p>
+ <p class="closing">With love and warm regards,<br>Families of Lalitha &amp; Bharadvaja</p>
+`,'vratham',true)
+];
+document.getElementById('pages').innerHTML=sections.join('');
+const nav=[...document.querySelectorAll('.dots a')],pages=[...document.querySelectorAll('.invite-page')];
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){nav.forEach((a,i)=>a.classList.toggle('active',pages[i]===e.target))}}),{threshold:.55});
+pages.forEach(p=>observer.observe(p));
+const layer=document.getElementById('petals');let last=0;
+function petals(n){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const chars=['🌸','🌼','❀','🌺'];for(let i=0;i<n;i++){let p=document.createElement('span');p.className='petal';p.textContent=chars[Math.floor(Math.random()*chars.length)];p.style.left='0';p.style.setProperty('--x',Math.random()*innerWidth+'px');p.style.setProperty('--drift',(Math.random()*150-75)+'px');p.style.setProperty('--spin',(Math.random()*600-300)+'deg');p.style.setProperty('--dur',(3.8+Math.random()*2.4)+'s');p.style.fontSize=(13+Math.random()*11)+'px';layer.appendChild(p);p.addEventListener('animationend',()=>p.remove(),{once:true})}}
+addEventListener('scroll',()=>{if(Date.now()-last>300){petals(innerWidth<600?2:3);last=Date.now()}},{passive:true});
+addEventListener('load',()=>petals(7),{once:true});
+</script>
+</body></html>
