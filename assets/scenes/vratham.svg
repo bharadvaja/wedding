@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="vratham watercolor ceremony illustration">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#eee8d5"/><stop offset="1" stop-color="#e5d5ad"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#c5d6c7"/><stop offset="1" stop-color="#eee2c5"/></linearGradient></defs>
+  <rect width="1000" height="600" fill="url(#sky)"/>
+  <circle cx="820" cy="120" r="64" fill="#fff0c6" opacity=".72"/>
+  <path d="M0 290Q140 220 260 270T500 255T760 270T1000 250V600H0Z" fill="#a6b68a" opacity=".35"/>
+  
+      <path d="M0 420 Q180 330 340 405 T700 380 T1000 400 V600 H0Z" fill="#a5b38a"/>
+      <path d="M0 480 Q190 415 390 475 T760 450 T1000 475 V600 H0Z" fill="#789172"/>
+      <g transform="translate(500 435)">
+       <path d="M-95 85Q-85 5 0-5Q85 5 95 85Z" fill="#b77a4b"/><ellipse cx="0" cy="-7" rx="95" ry="20" fill="#d5aa64"/>
+       <path d="M-58-22Q-70-82 0-105Q70-82 58-22Z" fill="#6e955d"/><path d="M0-105Q-28-150 0-178Q28-150 0-105" fill="#5c8d54"/>
+       <path d="M-30-40Q0-85 30-40" fill="none" stroke="#f4e6c5" stroke-width="9"/>
+      </g>
+      <g fill="#f0d18a"><circle cx="150" cy="410" r="10"/><circle cx="190" cy="440" r="8"/><circle cx="820" cy="420" r="10"/><circle cx="860" cy="450" r="8"/></g>
+    
+  <g fill="none" stroke="#fff7e6" stroke-width="4" opacity=".6"><path d="M0 520Q240 480 480 520T1000 510"/><path d="M0 555Q240 525 480 555T1000 545"/></g>
+  <g fill="#78965d" opacity=".8"><path d="M0 0Q90 40 110 180Q55 140 0 160Z"/><path d="M1000 0Q910 40 890 180Q945 140 1000 160Z"/></g>
+  <g fill="#e6a0ae"><circle cx="65" cy="80" r="12"/><circle cx="95" cy="105" r="8"/><circle cx="930" cy="80" r="12"/><circle cx="900" cy="105" r="8"/></g>
+  <rect width="1000" height="600" fill="#fff8e9" opacity=".08"/>
+  </svg>
